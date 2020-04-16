@@ -15,7 +15,11 @@
             <li>
                 <b>Nome:</b> <%= item.nome %> <%= item.sobrenome %> <br>
                 <b>Telefone:</b> <%= item.tel %> <br>
-		<b>Servico:</b> <%= item.kubernetes %> <br>
+		if(watson === 'route 1'){
+		 document.write("<b>Servico:</b> <%= item.kubernetes %> <br>");
+		}else{
+		 ocument.write("<b>Servico:</b> <%= item.watson %> <br>");
+		}
             </li>
         <% }); %>
         </ul>
