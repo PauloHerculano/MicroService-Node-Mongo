@@ -8,42 +8,65 @@
 	<link rel="stylesheet" type="text/css"   href="css/style.css">
 </head>
 <body class="cor">
-	<div class="container">
-		<h4> <b>Cadastre-se Conosco</b> </h4>
+		<div class="container">
+		<h4 class ="cabecalho"> <b>Seja bem vindo</b> </h4>
 		<form autocomplete="off" method="post" action="/item/add">
 			<div class="row">
 				<div class="col-6">
 				<label>Nome
-				<input type="text" name="nome" id="nome" placeholder="Seu Nome" required> </label>
+				<input type="text" class= "form-control" name="nome" id="nome" placeholder="Seu Nome" required> </label>
 				</div>
 				<div class="col-6">
 				<label>Sobrenome
-				<input type="text" name="sobrenome" id="sobrenome" placeholder="Seu Sobrenome" required> </label>
+				<input type="text" class= "form-control" name="sobrenome" id="sobrenome" placeholder="Seu Sobrenome" required> </label>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-6">
 				<label>CPF
-				<input type="number" name="cpf" id="cpf" placeholder="000.000.000-00" required> </label>
+				<input type="number" class= "form-control" name="cpf" id="cpf" placeholder="000.000.000-00" required> </label>
 				</div>
-				<div class="col-6">
-				<label>CEP
-				<input type="number" name="cep" id="cep" placeholder="00000-000" required> </label>
-				</div>
-			</div>
-			<div class="row">
 				<div class="col-6">
 				<label>Telefone
-				<input type="number" name="tel" id="tel" placeholder="(00) 0000-0000" required> </label>
+				<input type="number" class= "form-control" name="tel" id="tel" placeholder="(00) 0000-0000" required> </label>
 				</div>
+				<label>Escolha um produto:
+					<div class="form-group row">
+				
+						<div class="col-xs-2">
+							<img src="images/IBM-Watson.jpg" class="img-responsive img-radio">
+							<center>
+								<input type="radio" id="left-item" name="servico" value="watson"> Watson
+							</center>
+						</div>
+						
+						<div>
+							<img src="images/kubernetes.jpg" class="img-responsive img-radio">
+							<cdiv>
+								<input type="radio" id="left-item" name="servico" value="kubernetes"> Kubernetes
+							</>
+						</div>
+						
+				</label>
+			
 			</div>
-			<input type="submit" class="btn btn-light" value="Cadastrar">
+			<div class="row">
+			
+			</div>
+			<input type="submit" class="btn btn-primary" value="Cadastrar">
 			<div class="text-center">
 				<small> 
 					<a href="/cadastrados" class="text-muted">Users Cadastrados</a>
 				</small>	
 			</div>
 		</form>
-	</div>
+			<div >
+				<img src="images/índice.jpg" />
+			</div>
+
+			<div class="col-md-2"></div>
+			</div>
+		</div>
+	</div>	
 </body>
 </html>
