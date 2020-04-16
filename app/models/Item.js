@@ -14,10 +14,6 @@ const ItemSchema = new Schema({
     type: String,
     required: true
   },
-  cep: {
-    type: String,
-    required: true
-  },
   tel: {
     type: String,
     required: true
