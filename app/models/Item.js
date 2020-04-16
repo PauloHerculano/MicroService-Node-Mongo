@@ -25,6 +25,10 @@ const ItemSchema = new Schema({
   date: {
     type: Date,
     default: Date.now
+  },
+   produto: {
+    type: String,
+    required: true
   }
 });
 
