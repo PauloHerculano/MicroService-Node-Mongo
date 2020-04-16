@@ -8,9 +8,8 @@ express.post('/item/add', (req, res) => {
     nome: req.body.nome,
     sobrenome: req.body.sobrenome,
     cpf: req.body.cpf,
-    cep: req.body.cep,
     tel: req.body.tel,
-    prod: req.body.prod
+    produto: req.body.prod
   });
 
   newItem.save().then(item => res.redirect('/'));
